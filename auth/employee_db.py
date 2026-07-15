@@ -8,7 +8,7 @@ class EmployeeDB:
 
         if file_path is None:
             base_dir = Path(__file__).resolve().parent.parent
-            file_path = base_dir / "data" / "hr" / "hr_data.csv"
+            file_path = base_dir / "data" / "HR" / "hr_data.csv"
 
         self.file_path = file_path
         self.df = pd.read_csv(self.file_path)

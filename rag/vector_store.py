@@ -27,13 +27,17 @@ from qdrant_client.models import (
 from rag.file_manage import load_all_domains,chunk_all_domains 
 from rag.embedding_manager import EmbeddingManager
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 class VectorStore:
     """Manages document embeddings in Qdrant"""
 
     def __init__(
         self,
         collection_name="company_docs",
-        persist_directory="../data/qdrant_db2",
+        persist_directory= BASE_DIR / "data" / "qdrant_db2",
         embedding_dim=384
     ):
 

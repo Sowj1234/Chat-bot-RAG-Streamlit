@@ -20,7 +20,6 @@ from rag.vector_store import VectorStore
 
 st.set_page_config(
     page_title="Role Based Chatbot",
-    page_icon="🤖",
     layout="wide"
 )
 
@@ -79,7 +78,7 @@ elif action == "logout":
 # Main UI
 # --------------------------------------------------
 
-st.title("🤖 Company AI Assistant")
+st.title("FinSolve Technologies AI Assistant")
 
 
 # User not logged in

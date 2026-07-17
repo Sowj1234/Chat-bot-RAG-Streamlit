@@ -12,7 +12,7 @@ def render_sidebar():
 
     with st.sidebar:
 
-        st.title("🤖 Company AI")
+        st.title("FinSolve Technologies")
 
         st.divider()
 
